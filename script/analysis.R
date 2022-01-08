@@ -78,11 +78,12 @@ s <- summary(df_pca)
 set_xlab=paste("PC 1 (", round(s$importance[2,1]*100, 1), "%)", sep = "")
 set_ylab=paste("PC 2 (", round(s$importance[2,2]*100, 1), "%)", sep = "")
 
+# Fix misspelled names  
 df_out <- df_out %>% 
   mutate(name_outliers = case_when(
-    str_detect(name, regex("Öppet spår", ignore_case = T)) ~ "Vasaloppet - Öppet spår",
+    str_detect(name, regex("Öppet spår", ignore_case = T)) ~ "Vasaloppet",
     str_detect(name, regex("Motala Cykling", ignore_case = T)) ~ "Vätternrundan",
-    str_detect(name, regex("Ironman Köpenhamn Cykling", ignore_case = T)) ~ "Ironman - Cyckling"
+    str_detect(name, regex("Ironman Köpenhamn Cykling", ignore_case = T)) ~ "Ironman - Cycling"
   ))
 
 #set  activity colors
@@ -200,11 +201,12 @@ df_out <- cbind(df_out, df_clean_log)
 s <- summary(df_pca)
 set_xlab=paste("PC 1 (", round(s$importance[2,1]*100, 1), "%)", sep = "")
 set_ylab=paste("PC 2 (", round(s$importance[2,2]*100, 1), "%)", sep = "")
+# Fix misspelled names  
 df_out <- df_out %>% 
   mutate(name_outliers = case_when(
-    str_detect(name, regex("Öppet spår", ignore_case = T)) ~ "Vasaloppet - Öppet spår",
+    str_detect(name, regex("Öppet spår", ignore_case = T)) ~ "Vasaloppet",
     str_detect(name, regex("Motala Cykling", ignore_case = T)) ~ "Vätternrundan",
-    str_detect(name, regex("Ironman Köpenhamn Cykling", ignore_case = T)) ~ "Ironman - Cyckling"
+    str_detect(name, regex("Ironman Köpenhamn Cykling", ignore_case = T)) ~ "Ironman - Cycling"
   ))
 
 

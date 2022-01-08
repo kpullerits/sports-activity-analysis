@@ -1,10 +1,10 @@
 Data analysis of my sports activities
 ================
 
-This repo contains data analysis of my sports activity data during 2017
-to 2022. Sports activities were tracked using a sports watch and the
-data was downloaded using Garmin connect. Activities of parts of the
-data during 2021 was plotted in my gpx\_plotter repo:
+This repo contains data analysis of my sports activity data from 2017 to
+2022. Sports activities were tracked using a sports watch and the data
+was downloaded using Garmin Connect. Activities of parts of the data
+during 2021 was plotted in my gpx\_plotter repo:
 <https://github.com/kpullerits/gpx_plotter>. Seven measurements
 (variables) were used in this analysis:
 
@@ -370,7 +370,7 @@ since some variables such as distance and time seems to give more
 weight, based on the discussion around Fig. 1. It is shown that
 `Max pulse` and `Mean pulse` seem normally distributed while
 `Calories`,`Distance`, `Stifa`, `Total climb` and `Total time` are right
-scewed with some datapoints with high values.
+skewed with some datapoints with high values.
 
 <img src="./output/p2_variable_distribution_no_log.png" width="2100" />
 
@@ -382,7 +382,7 @@ more normally distributed after transformation (Fig. 3).
 
 <img src="./output/p3_variable_distribution_log10.png" width="2100" />
 
-*Figure 3 Data distribution of the log transformed variables in the
+*Figure 3. Data distribution of the log transformed variables in the
 dataset. Max pulse and Mean pulse were not log transformed.*
 
 ## Data analysis

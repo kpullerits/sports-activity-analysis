@@ -9,7 +9,7 @@ library(tidyverse)
 library(kableExtra)
 load("./output/data.Rdata")
 ```
-This repo contains data analysis of my sports activity data during 2017 to 2022. Sports activities were tracked using a sports watch and the data was downloaded using Garmin connect. Activities of parts of the data during 2021 was plotted in my gpx_plotter repo: <https://github.com/kpullerits/gpx_plotter>. Seven measurements (variables) were used in this analysis:
+This repo contains data analysis of my sports activity data from 2017 to 2022. Sports activities were tracked using a sports watch and the data was downloaded using Garmin Connect. Activities of parts of the data during 2021 was plotted in my gpx_plotter repo: <https://github.com/kpullerits/gpx_plotter>. Seven measurements (variables) were used in this analysis:
 
 * Distance (km)
 * Calories (kcal)
@@ -46,7 +46,7 @@ knitr::include_graphics("./output/p1_pca_no_log.png")
 
 *Figure 1. PCA analysis of the raw data. Text boxes indicate outliers.*
 
-The data distribution of the seven variables were investigated (Fig. 2) since some variables such as distance and time seems to give more weight, based on the discussion around Fig. 1. It is shown that `Max pulse` and `Mean pulse` seem normally distributed while `Calories`,`Distance`, `Stifa`, `Total climb` and `Total time` are right scewed with some datapoints with high values. 
+The data distribution of the seven variables were investigated (Fig. 2) since some variables such as distance and time seems to give more weight, based on the discussion around Fig. 1. It is shown that `Max pulse` and `Mean pulse` seem normally distributed while `Calories`,`Distance`, `Stifa`, `Total climb` and `Total time` are right skewed with some datapoints with high values. 
 
 ```{r, echo = FALSE}
 knitr::include_graphics("./output/p2_variable_distribution_no_log.png")
@@ -60,7 +60,7 @@ The variables `Calories`,`Distance`, `Stifa`, `Total climb` and `Total time` wer
 knitr::include_graphics("./output/p3_variable_distribution_log10.png")
 ```
 
-*Figure 3 Data distribution of the log transformed variables in the dataset. Max pulse and Mean pulse were not log transformed.*
+*Figure 3. Data distribution of the log transformed variables in the dataset. Max pulse and Mean pulse were not log transformed.*
 
 ## Data analysis
 
